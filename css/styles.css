@@ -224,7 +224,7 @@ ul > li{
     padding-right: 15px;
     margin: auto;
 }
-/*Termina el header*/
+
 /*comienza el main*/
 .head__background{
     color: var(--color_white);
@@ -527,7 +527,7 @@ ul > li{
     justify-content: center;
     display: flex;
 }
-
+/*comienza el footer*/
 .footer{
     background-color: rgba(47, 48, 58, 1);
     padding-top: 60px;
