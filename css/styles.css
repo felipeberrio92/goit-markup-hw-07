@@ -224,19 +224,20 @@ ul > li{
     padding-right: 15px;
     margin: auto;
 }
-.head_title{
+/*Termina el header*/
+/*comienza el main*/
+.head__background{
     color: var(--color_white);
     background-color: var(--color_black);
     text-align:center;
-
 }
-.bg_imagen{
+.head__background-imagen{
     background-image: linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(0, 0, 0, 0.4)),
         url("../images/services/bg_imagen.jpg");
     background-size: cover;
     background-position: bottom center;
 }   
-.main_title{
+.head__title{
     font-family: inherit;
     text-align: center;
     display: flex;
@@ -250,7 +251,7 @@ ul > li{
     margin-top: 0px
 
 }
-.button_primary{
+.head__button{
     color: var(--color_white);
     background-color: var(--color_blue);
     cursor: pointer;
@@ -265,16 +266,16 @@ ul > li{
     justify-content: center;
     outline: none;
 }
-.button_primary:hover{
+.head__button:hover{
     box-shadow: rgb(0, 0, 0) 0px 4px 4px 0px;
 }
-.button_primary:focus-within{
+.head__button:focus-within{
     box-shadow: rgb(0, 0, 0) 0px 4px 4px 0px;
 }
-.button_primary:focus{
+.head__button:focus{
     box-shadow: rgb(0, 0, 0) 0px 4px 4px 0px;
 }
-.about_list{
+.about__list{
     font-family: 'Roboto';
     margin: auto;
     display: flex;
@@ -285,13 +286,13 @@ ul > li{
 
 }
 
-.icon_about{
+.about__images{
     width: 270px;
     padding-right: 100px;
     padding-left: 100px;
 }
 
-.about_item{
+.about__title{
     color: var(--color_black);
     font-family: inherit;
     font-weight: 700;
@@ -302,10 +303,10 @@ ul > li{
     margin-bottom: 10px;
 
 }
-.about_item:hover{
+.about__title:hover{
     color: var(--color_gray);
 }
-.about_text{
+.about__text{
     font-family:inherit;
     font-style: normal;
     color:var(--color_gray);
@@ -315,15 +316,15 @@ ul > li{
     letter-spacing: 0.03em;
     
 }
-.about_container{
+.about__container{
     margin: auto;
     width: 270px;
 }
-.main__services{
+.services{
     margin: auto;
     justify-content: center;
 }
-.headings_service{
+.services__title{
     color: var(--color_black);
     font-family: inherit;
     text-align:center;
@@ -334,7 +335,7 @@ ul > li{
     padding-bottom: 50px;
     margin-top: 99px;
 }
-.headings_team{
+.team__title{
     color: var(--color_black);
     font-family: inherit;
     text-align:center;
@@ -345,7 +346,7 @@ ul > li{
     padding-bottom: 50px;
     margin-top: 188px;
 }
-.images_services{
+.services__list{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -353,11 +354,11 @@ ul > li{
     column-gap: 37px;
     position: relative;
 }
-.imagen_servicio{
+.services__images{
     position: relative;
 }
 
-.services_text{
+.services__text{
     position: absolute;
     color:var(--color_white);
     text-align: center;
@@ -372,27 +373,25 @@ ul > li{
     bottom: 3px;
     background: rgba(47, 48, 58, 0.80);
     padding-top: 27px;
-
-
 }
-.main__team{
+.team{
     display: flex;
     flex-wrap: wrap;
     
 }
-.shadow{
+.team__cards-shadow{
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
     width: 270px;
     height: 428px;
 }
-.target{
+.team__card{
     width: 270px;
     height: 428px;
     
 }
-.images_team{
+.team__cards{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -400,7 +399,7 @@ ul > li{
     gap: 37px;
 
 }
-.job_title{
+.team__subtitle{
     color: var(--color_gray);
     font-family: inherit;
     text-align: center;
@@ -412,7 +411,7 @@ ul > li{
     height: 19px;
     width: 270px;
 }
-.job_name{
+.team__name{
     color: var(--color_black);
     font-family: inherit;
     text-align: center;
@@ -422,7 +421,7 @@ ul > li{
     letter-spacing: 0.03em;
     height: 19px;
 }
-.icon_svg{
+.team__redes{
     cursor: pointer;
     display:flex;
     align-items: center;
@@ -432,12 +431,12 @@ ul > li{
     fill:var(--color_gray);
 }
 
-.svg_redes{
+.team__items{
     height: 20px;
     width: 20px;
     
 }
-.bg_redes{
+.team__redes--fondo{
     height: 40px;
     width: 40px;
     align-items: center;
@@ -445,22 +444,33 @@ ul > li{
     display: flex;
     fill: var(--color_icono_redes);
 }
-.bg_redes:hover{
+.team__redes--fondo:hover{
     fill:var(--color_white);
     background-color: var(--color_fondo_redes);
     border-radius: 50%;
 }
-.bg_redes:focus{
+.team__redes--fondo:focus{
     fill:var(--color_white);
     background-color: var(--color_fondo_redes);
     border-radius: 50%;
 }
-.bg_redes:focus-within{
+.team__redes--fondo:focus-within{
     fill:var(--color_white);
     background-color: var(--color_fondo_redes);
     border-radius: 50%;
 }
-.container_clientes{
+.clientes__title{
+    color: var(--color_black);
+    font-family: inherit;
+    text-align:center;
+    font-weight: 700;
+    line-height: 1.16;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    margin-top: 99px;
+}
+.clientes__list{
     width: 1200px;
     padding-left: 0px;
     margin: auto;
@@ -471,7 +481,7 @@ ul > li{
     cursor: pointer;
     fill: var(--color_icon_gray);
 }
-.border_svg{
+.clientes__cards--border{
     width: 170px;
     height: 71px;
     border-radius: 4px;
@@ -479,16 +489,16 @@ ul > li{
     justify-content: center;
     display: flex;
 }
-.border_svg:hover{
+.clientes__cards--border:hover{
     border-color:var(--color_icono_cliente_blue);
     fill:var(--color_icono_cliente_blue);
     
 }
-.border_svg:focus{
+.clientes__cards--border:focus{
     border-color:var(--color_icono_cliente_blue);
     fill: var(--color_icono_cliente_blue);
 }
-.border_svg:focus-within{
+.clientes__cards--border:focus-within{
     border-color:var(--color_icono_cliente_blue);
     fill: var(--color_icono_cliente_blue);
 }
@@ -509,7 +519,7 @@ ul > li{
     fill: var(--color_blue);
     outline-color: var(--color_blue);
 }
-.svg_cliente{
+.clientes__items{
     width: 170px;
     height: 53px;
     padding: 8.7px 10.564px 3.503px 11px;
