@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$color_blue: rgba(33, 150, 243, 1);
+$color_black: rgb(33, 33, 33, 1);
+$color_gray: rgba(117, 117, 117, 1);
+$color_footer: rgba(255, 255, 255, 0.6);
+$color_white: rgba(255, 255, 255, 1);
+$color_icon_gray: rgba(175, 177, 184, 1);
+$color_icono_cliente_blue:  rgba(33, 150, 243, 1);
+$color_icono_redes: rgba(175, 177, 184, 1);
+$color_fondo_redes: rgba(33, 150, 243, 1);
+
+.links{
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    &:focus-within{
+        color: var(--color_blue);
+}
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: auto;
+}
+a:any-link{
+    text-decoration: none;
+    
+}
+a:visited{
+    text-decoration: none;
+}
+
+ul > li{
+    list-style: none;
+    margin: 0;
+}
+.list{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: auto;
+    width: 1200px;
+}
+.logo{
+    color: $color_blue;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    font-size: 26px;
+    column-gap: 92px;
+    padding-right: 93px;
+    outline: none;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.header{
+    border-bottom:rgba(236, 236, 236, 1) 1px solid;
+    &__navigation{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        height: 80px;
+    }
+    &__menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        outline:none;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 50px;
+        margin-right: 306px;
+        text-align: center;
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+}
+.header__contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0px;
+    align-items: center;
+    
+}
+.header_link{
+    color: $color_black;
+    outline: none;
+    margin: auto;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    &:hover::after,
+    &:focus::after,
+    &:focus-within::after
+    {
+        display: inline-block;
+        position:absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: rgb(33, 150, 243);
+        left: 0px;
+        bottom: -32px; 
+    
+    }
+}
+.header_link:hover{
+    color: $color_blue;
+    &:focus{
+        color: $color_blue;
+    }
+}
+.current::after{
+    display: inline-block;
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: rgb(33, 150, 243);
+    left: 0px;
+    bottom: -32px;    
+}
+.header_link.current{
+    color: $color_blue;
+}
+.mail_contact.current{
+    fill:$color_blue;
+    color:$color_blue;
+}
+.header__contact-list{
+    padding-right: 0px;
+    margin-right: 30px;
+    border-right-width: 10px;
+    cursor: pointer;
+    fill: $color_gray;
+    &:hover {
+        fill:$color_blue;
+    }
+    &:focus{
+        fill:$color_blue;
+    }
+    :focus-within{
+        fill:$color_blue;
+    }
+}
+.header__phone{
+    color:$color_gray;
+    outline: none;
+    &:focus{
+        color: $color_gray;
+    }
+    &:focus-within{
+        color: $color_blue;
+    }
+}
+.header__phone:hover{
+    color: $color_blue;
+    &:active{
+        color: $color_blue;
+    }
+}
+.header__email{
+    color: $color_gray;
+    outline: none;
+    &:focus{
+        color:$color_blue;
+    }
+    &:focus-within{
+        color:$color_blue;
+    }
+}
+.header__email:hover{
+    color:$color_blue;
+    &:active{
+        color: $color_blue;
+    }
+}
+.header__sobre{
+    width: 16px; 
+    height: 16px;
+    margin-right: 10px;
+    margin-bottom: -2px;
+}
+.header__cel{
+    width: 10px; 
+    height: 16px;
+    margin-right: 10px;
+}
+.head_container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}

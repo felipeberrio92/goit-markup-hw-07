@@ -43,7 +43,7 @@ ul > li{
     margin: 0;
     padding: 0;
 }
-.header__sombra{
+.header{
     border-bottom:rgba(236, 236, 236, 1) 1px solid;
     
 
@@ -83,6 +83,7 @@ ul > li{
     justify-content: space-between;
     padding-left: 0px;
     align-items: center;
+    
     
 }
 .container{
