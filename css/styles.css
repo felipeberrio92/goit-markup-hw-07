@@ -84,7 +84,7 @@ ul > li{
     padding-left: 0px;
     align-items: center;
     
-    
+
 }
 .container{
     margin: auto;
@@ -336,17 +336,7 @@ ul > li{
     padding-bottom: 50px;
     margin-top: 99px;
 }
-.team__title{
-    color: var(--color_black);
-    font-family: inherit;
-    text-align:center;
-    font-weight: 700;
-    line-height: 1.16;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    padding-bottom: 50px;
-    margin-top: 188px;
-}
+
 .services__list{
     display: flex;
     flex-wrap: wrap;
@@ -379,6 +369,17 @@ ul > li{
     display: flex;
     flex-wrap: wrap;
     
+}
+.team__title{
+    color: var(--color_black);
+    font-family: inherit;
+    text-align:center;
+    font-weight: 700;
+    line-height: 1.16;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    margin-top: 188px;
 }
 .team__cards-shadow{
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -599,11 +600,7 @@ ul > li{
     color: var(--color_blue);
     outline: none;
 }
-.Redes_footer{
-    color:var(--color_white);
-    height: 20px;
-    width: 20px;
-}
+
 .footer__logo{
     display: flex;
     justify-content: center;
@@ -690,7 +687,7 @@ ul > li{
     padding-left: 16px;
 }
 .footer__email:hover{
-    border: 1px solid #2196F3;
+    border: 1px solid rgb(33, 150, 243);
 }
 .footer__email:focus{
     border: 1px solid #2196F3;
