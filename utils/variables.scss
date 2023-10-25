@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$color_blue: rgba(33, 150, 243, 1);
+$color_black: rgb(33, 33, 33, 1);
+$color_gray: rgba(117, 117, 117, 1);
+$color_footer: rgba(255, 255, 255, 0.6);
+$color_white: rgba(255, 255, 255, 1);
+$color_icon_gray: rgba(175, 177, 184, 1);
+$color_icono_cliente_blue:  rgba(33, 150, 243, 1);
+$color_icono_redes: rgba(175, 177, 184, 1);
+$color_fondo_redes: rgba(33, 150, 243, 1);
+
+.links{
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    &:focus-within{
+        color: var(--color_blue);
+}
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: auto;
+}
+a:any-link{
+    text-decoration: none;
+    
+}
+a:visited{
+    text-decoration: none;
+}
+
+ul > li{
+    list-style: none;
+    margin: 0;
+}
+.list{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: auto;
+    width: 1200px;
+}
+.logo{
+    color: $color_blue;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    font-size: 26px;
+    column-gap: 92px;
+    padding-right: 93px;
+    outline: none;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}

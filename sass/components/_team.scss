@@ -1,0 +1,90 @@
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    &__title{
+        color:$color_black;
+        font-family: inherit;
+        text-align:center;
+        font-weight: 700;
+        line-height: 1.16;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        padding-bottom: 50px;
+        margin-top: 188px;
+    }
+}
+.team{
+    &__cards-shadow{
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 0px 0px 4px 4px;
+        padding-bottom: 30px;
+        width: 270px;
+        height: 428px;
+    }
+    &__card{
+        width: 270px;
+        height: 428px;
+        
+    }
+}
+.team{
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 37px;
+    }
+    &__subtitle{
+        color:$color_gray;
+        font-family: inherit;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        margin-bottom: 24px; 
+        height: 19px;
+        width: 270px;
+    }
+}
+.team{
+    &__name{
+        color:$color_black ;
+        font-family: inherit;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        height: 19px;
+    }
+    &__redes{
+        cursor: pointer;
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 270px;
+        padding-left: 0px;
+        fill:$color_gray;
+    }
+    &__items{
+        height: 20px;
+        width: 20px;
+        
+    }
+}
+.team__redes--fondo{
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    fill:$color_icono_redes;
+    &:hover ,&:focus , &:focus-within
+    {
+        fill:$color_white ;
+        background-color:$color_fondo_redes;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,54 @@
+.clientes{
+    &__title{
+        color:$color_black;
+        font-family: inherit;
+        text-align:center;
+        font-weight: 700;
+        line-height: 1.16;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        padding-bottom: 50px;
+        margin-top: 99px;
+    }
+    &__list{
+        width: 1200px;
+        padding-left: 0px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        fill: $color_icon_gray;
+    }
+}
+.clientes__items{
+    width: 170px;
+    height: 53px;
+    padding: 8.7px 10.564px 3.503px 11px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.clientes__cards--border{
+    width: 170px;
+    height: 71px;
+    border-radius: 4px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    justify-content: center;
+    display: flex;
+    &:hover, &:focus, &:focus-within
+    {
+        border-color:$color_icono_cliente_blue;
+        fill:$color_icono_cliente_blue;
+    }
+}
+.clientes_links{
+    fill: var(--color_icon_gray);
+    outline-color: var(--color_blue);
+    &:hover , &:focus, &:focus-within
+    {
+        fill: $color_blue ;
+        outline-color:$color_blue;
+    }
+}
